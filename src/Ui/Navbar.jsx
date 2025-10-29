@@ -10,9 +10,27 @@ function Navbar() {
             <div className="hidden md:flex items-center space-x-8">
               <a
                 href="#home"
-                className="text-gray-300 hover:text-xl hover:text-white transition-all"
+                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all"
               >
                 Home
+              </a>
+              <a
+                href="#about"
+                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all"
+              >
+                About
+              </a>
+              <a
+                href="#projects"
+                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all"
+              >
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all"
+              >
+                Contact
               </a>
             </div>
           </div>
