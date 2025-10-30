@@ -1,14 +1,18 @@
+import { use } from "react";
 import Logo from "./Logo";
 import { MdMenu } from "react-icons/md";
 
 function Navbar({ isMenuOpen, setIsMenuOpen }) {
+    useEffect(() => {
+        document.body.style.overflow = isMenuOpen ? 'hidden' : "";
+    }, [isMenuOpen]);
   return (
     <nav className="fixed top-0 w-full z-40 bg[hsla(0, 0%, 4%, 0.80)] backdrop-blur-lg px-1 border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-16 font-mono">
           <Logo />
 
-          <div className="text-2xl absolute right-7 z-40 md:hidden cursor-pointer font-mono">
+          <div onClick={() => setIsMenuOpen(prev => !prev)} className="text-2xl absolute right-7 z-40 md:hidden cursor-pointer font-mono">
             <MdMenu />
           </div>
 
