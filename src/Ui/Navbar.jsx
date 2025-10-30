@@ -1,4 +1,4 @@
-import { use } from "react";
+import { useEffect } from "react";
 import Logo from "./Logo";
 import { MdMenu } from "react-icons/md";
 
