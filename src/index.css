@@ -7,3 +7,32 @@ html, body {
   background: #1c0d30;
   color: #f3f4f6;
 }
+
+@layer utilities {
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(105%);
+    }
+  }
+.animate-loading-bar {
+    animation: loading 5s ease infinite;
+  }  
+}
+
+@layer utilities {
+  @keyframes blink {
+    0%, 
+    100% { 
+      opacity: 1; 
+    }
+    50% {
+       opacity: 0;
+       }
+  }
+  .animate_blink {
+    animation: blink 1.2s step-end infinite;
+  }
+}
