@@ -18,7 +18,7 @@ html, body {
     }
   }
 .animate-loading-bar {
-    animation: loading 5s ease infinite;
+    animation: loading 6s ease infinite;
   }  
 }
 
@@ -33,6 +33,6 @@ html, body {
        }
   }
   .animate_blink {
-    animation: blink 1.2s step-end infinite;
+    animation: blink 1.5s step-end infinite;
   }
 }
