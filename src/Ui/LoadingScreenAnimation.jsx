@@ -15,7 +15,7 @@ function LoadingScreenAnimation({ onComplete }) {
         clearInterval(interval);
         setTimeout(() => {
           onComplete();
-        }, 1000);
+        }, 1500);
       }
     }, 100);
 
