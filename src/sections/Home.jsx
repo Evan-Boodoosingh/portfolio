@@ -1,16 +1,17 @@
 import profileImg from "../assets/profilepic.png";
 import resume from "../assets/Evan_Boodoosingh_Resume.pdf";
 import { FiDownload } from "react-icons/fi";
+import AnimationWaves from "../Ui/AnimationWaves";
 
 function Home() {
   return (
     <section
       id="#home"
-      className="min-h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-9 lg:gap-15"
+      className="min-h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-9 lg:gap-15 relative"
     >
       <div className="text-center z-10 px-4">
         <img
-          className="w-[200px] border-0 mt-20 rounded-full shadow-md shadow-gray-500/70 lg:m-0 lg:w-[250px] object-cover object-bottom hover:translate-y-1 transition-all"
+          className="w-[200px] border-0 mt-28 rounded-full shadow-md shadow-gray-500/70 lg:m-0 lg:w-[250px] object-cover object-bottom hover:translate-y-1 transition-all"
           src={profileImg}
           alt="profile image"
         />
@@ -26,7 +27,7 @@ function Home() {
           I'm adaptive, passionate, and always focused on the solution. Let's
           talk about the next problem we're going to crush.
         </p>
-        <div className="flex justify-center items-center space-x-4">
+        <div className="flex justify-center items-center space-x-4 mb-20">
           <a
             className="bg-linear-to-r flex flex-row from-teal-400 via-blue-500 to-indigo-600 text-white py-3 px-6 rounded hover:-translate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
             href="#contact"
@@ -45,6 +46,7 @@ function Home() {
           </a>
         </div>
       </div>
+      <AnimationWaves />
     </section>
   );
 }

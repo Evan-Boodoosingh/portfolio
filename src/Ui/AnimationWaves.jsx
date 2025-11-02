@@ -1,6 +1,6 @@
 function AnimationWaves() {
   return (
-    <div className="absolute bottom-0 w-full hidden  lg:block">
+    <div className="absolute bottom-0 left-0 w-full">
       <svg
         viewBox="0 0 1440 280"
         className="wave w-full h-auto"
