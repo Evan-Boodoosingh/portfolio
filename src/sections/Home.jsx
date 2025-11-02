@@ -1,4 +1,6 @@
 import profileImg from "../assets/profilepic.png";
+import resume from "../assets/Evan_Boodoosingh_Resume.pdf";
+import { FiDownload } from "react-icons/fi";
 
 function Home() {
   return (
@@ -24,6 +26,24 @@ function Home() {
           I'm adaptive, passionate, and always focused on the solution. Let's
           talk about the next problem we're going to crush.
         </p>
+        <div className="flex justify-center items-center space-x-4">
+          <a
+            className="bg-linear-to-r flex flex-row from-teal-400 via-blue-500 to-indigo-600 text-white py-3 px-6 rounded hover:-translate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
+            href="#contact"
+          >
+            Contact Me
+          </a>
+          <a
+            className="bg-linear-to-r flex flex-row items-center from-teal-400 via-blue-500 to-indigo-600 text-white py-3 px-6 rounded hover:-translate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
+            href={resume}
+            download
+          >
+            Resume
+            <span className="h-5 ml-2 text-xl text-white">
+              <FiDownload />
+            </span>
+          </a>
+        </div>
       </div>
     </section>
   );
