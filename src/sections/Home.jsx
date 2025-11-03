@@ -4,6 +4,19 @@ import { FiDownload } from "react-icons/fi";
 import AnimationWaves from "../Ui/AnimationWaves";
 
 function Home() {
+  const handleProfileClick = () => {
+    // Navigate to contact section
+    window.location.href = "#contact";
+
+    // Trigger resume download
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "Evan_Boodoosingh_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -11,9 +24,10 @@ function Home() {
     >
       <div className="text-center z-10 px-4">
         <img
-          className="w-[200px] border-0 mt-28 rounded-full shadow-md shadow-gray-500/70 lg:m-0 lg:w-[250px] object-cover object-bottom hover:translate-y-1 transition-all"
+          className="w-[200px] border-0 mt-28 rounded-full shadow-md shadow-gray-500/70 lg:m-0 lg:w-[250px] object-cover object-bottom hover:translate-y-1 transition-all cursor-pointer"
           src={profileImg}
           alt="profile image"
+          onClick={handleProfileClick}
         />
       </div>
       <div className="text-center font-mono z-10 px-4">
