@@ -7,7 +7,7 @@ function Navbar({ isMenuOpen, setIsMenuOpen }) {
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
   }, [isMenuOpen]);
   return (
-    <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-11/12 max-w-4xl z-40 bg-white/10 backdrop-blur-xl rounded-full border border-white/20 shadow-2xl">
+    <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-11/12 max-w-4xl z-40 bg-white/5 backdrop-blur-lg rounded-full border border-white/15 shadow-2xl">
       <div className="px-6">
         <div className="flex items-center justify-between h-14 font-mono">
           <Logo />
