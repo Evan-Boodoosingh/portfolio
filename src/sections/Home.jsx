@@ -17,7 +17,7 @@ function Home() {
         />
       </div>
       <div className="text-center font-mono z-10 px-4">
-        <h1 className="text-5xl lg:text-6xl font-semibold mb-6 px-1 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent leading-relaxed">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold mb-6 px-1 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent leading-relaxed">
           Full-Stack MERN Developer
         </h1>
         <p className="text-grey-300 text-base lg:text-lg mb-8 max-w-lg mx-auto">

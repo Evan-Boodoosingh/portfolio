@@ -11,7 +11,6 @@ function About() {
     "Responsive Design",
     "Git & GitHub",
     "RESTful APIs",
-    "Agile Methodologies",
   ];
   return (
     <section
