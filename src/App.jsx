@@ -4,6 +4,7 @@ import Navbar from "./Ui/NavBar";
 import LoadingScreenAnimation from "./Ui/LoadingScreenAnimation";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <Home />
       <About />
+      <Projects />
     </>
   );
 }

@@ -58,7 +58,7 @@ function About() {
             <div className="flex justify-center flex-wrap gap-2">
               {skills.map((skill, index) => (
                 <span
-                  className="bg-blue-500/10 text-gray-300 py-0.5 px-2 rounded-full text-balance hover:bg-blue-500/20 hover:shadow-[9_2px_8px_rgba(59,130,22.46,0.2)]"
+                  className="bg-blue-500/10 text-gray-300 py-0.5 px-2 rounded-full text-balance hover:bg-blue-500/20 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)]"
                   key={index}
                 >
                   {skill}
