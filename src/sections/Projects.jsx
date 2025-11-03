@@ -51,9 +51,7 @@ function Projects() {
             >
               <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
               <div className="h-48 mb-4">
-                <p className="text-gray-300 indent-8">
-                  {project.description}
-                </p>
+                <p className="text-gray-300 indent-8">{project.description}</p>
               </div>
               <div className="flex flex-wrap sm:items-center gap-2 mb-4">
                 {project.technologies.map((tech, index) => (
