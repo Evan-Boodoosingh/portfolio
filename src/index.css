@@ -35,4 +35,8 @@ html, body {
   .animate_blink {
     animation: blink 1.5s step-end infinite;
   }
+
+  .font-emoji {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  }
 }
