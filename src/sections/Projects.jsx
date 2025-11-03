@@ -34,7 +34,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center font-mono justify-center py-20"
+      className="min-h-screen flex items-center font-mono justify-center py-25"
     >
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="w-full text-4xl md:text-5xl lg:text-5xl font-semibold mb-7 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-relaxed py-2">
@@ -64,7 +64,7 @@ function Projects() {
                 ))}
               </div>
               <div className="mt-auto w-full">
-                <div className="flex flex-col text-center my-5 py-5 justify-center gap-3 border-2 border-white/10 hover:border-blue-500/30 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)] cursor-pointer  rounded-xl">
+                <div className="flex flex-col text-center my-5 py-4 justify-center gap-3 border-2 border-white/10 hover:border-blue-500/30 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)] cursor-pointer  rounded-xl">
                   <p className="text-gray-300 transition-colors hover:text-white">
                     View Project
                   </p>

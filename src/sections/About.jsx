@@ -18,7 +18,7 @@ function About() {
       className="min-h-screen font-mono flex items-center justify-center pt-30 pb-25"
     >
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="max-w-3xl text-5xl font-semibold mb-6 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center">
+        <h2 className="max-w-3xl text-5xl font-semibold mb-8 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center">
           About Me
         </h2>
         <div className="mb-5 p-8 rounded-3xl border-white/10 border-2">
@@ -51,7 +51,7 @@ function About() {
           <div className="rounded-xl p-6">
             <h3 className="text-3xl text-center font-bold mb-8 flex items-baseline justify-center gap-2">
               <span className="font-emoji text-3xl leading-none">💼</span>
-              <span className="bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent leading-none">
+              <span className="mt-1 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent leading-none">
                 Skills
               </span>
             </h3>
