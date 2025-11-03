@@ -15,7 +15,7 @@ function Navbar({ isMenuOpen, setIsMenuOpen }) {
           {!isMenuOpen && (
             <div
               onClick={() => setIsMenuOpen((prev) => !prev)}
-              className="text-2xl absolute right-6 z-40 md:hidden cursor-pointer font-mono hover:bg-white/10 p-2 rounded-full transition-all"
+              className="text-2xl absolute right-6 z-40 md:hidden cursor-pointer font-mono hover:bg-white/10 rounded-full transition-all"
             >
               <MdMenu />
             </div>
