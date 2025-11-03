@@ -22,7 +22,7 @@ function Home() {
         </h1>
         <p className="text-grey-300 text-base lg:text-lg mb-8 max-w-lg mx-auto">
           A Software Engineer who truly loves the art of building scalable
-          solutions. I leveraged my diverse real-world experiences to master the
+          solutions. I leveraged diverse real-world experiences to master the
           MERN stack and turn complex ideas into clean, fully functioning web
           applications. I'm adaptive, passionate, and always focused on the
           solution. Let's talk about the next problem we're going to crush.
