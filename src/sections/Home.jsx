@@ -43,13 +43,13 @@ function Home() {
         </p>
         <div className="flex justify-center items-center space-x-4 mb-20">
           <a
-            className="bg-linear-to-r flex flex-row from-teal-400 via-blue-500 to-indigo-600 text-white py-3 px-6 rounded hover:-translate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
+            className="bg-linear-to-r flex flex-row from-teal-400 via-blue-500 to-indigo-600 text-white py-3 px-6 rounded-full hover:-translate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
             href="#contact"
           >
             Contact Me
           </a>
           <a
-            className="bg-linear-to-r flex flex-row items-center from-teal-400 via-blue-500 to-indigo-600 text-white py-3 px-6 rounded hover:-translate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
+            className="bg-linear-to-r flex flex-row items-center from-teal-400 via-blue-500 to-indigo-600 text-white py-3 px-6 rounded-full hover:-translate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
             href={resume}
             download
           >
