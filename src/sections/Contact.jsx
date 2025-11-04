@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen font-mono flex items-center justify-center py-25"
+      className="min-h-screen font-mono flex items-center justify-center py-10 pt-32"
     >
       <RevealOnScroll>
         <div className="max-w-2xl mx-auto px-4 w-full">
@@ -26,9 +26,9 @@ export const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Please enter your Name..."
+                placeholder="Please enter your Name"
                 required
-                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-full px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16"
+                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-full px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16 placeholder:text-center"
               />
             </div>
             <div className="relative">
@@ -36,9 +36,9 @@ export const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Please enter your Email..."
+                placeholder="Please enter your Email"
                 required
-                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-full px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16"
+                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-full px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16 placeholder:text-center"
               />
             </div>
             <div className="relative">
@@ -46,9 +46,9 @@ export const Contact = () => {
                 id="message"
                 name="message"
                 rows={6}
-                placeholder="Please fill in your Message..."
+                placeholder="Please fill in your Message"
                 required
-                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-4xl px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16 resize-y"
+                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-4xl px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16 resize-y placeholder:text-center"
               />
             </div>
             <div>

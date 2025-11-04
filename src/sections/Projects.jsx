@@ -35,11 +35,11 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center font-mono justify-center py-25"
+      className="min-h-screen flex items-center font-mono justify-center py-10 pt-32"
     >
       <RevealOnScroll>
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="w-full text-4xl md:text-5xl lg:text-5xl font-semibold mb-7 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-relaxed py-2">
+          <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-tight py-2">
             Featured Projects
           </h2>
 
