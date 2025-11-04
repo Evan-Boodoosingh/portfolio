@@ -1,16 +1,108 @@
-# React + Vite
+# Evan Boodoosingh - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my software development projects and skills. Built with React and featuring a sleek glass morphism design with smooth animations.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Glass Morphism UI**: Modern transparent elements with backdrop blur effects
+- **Interactive Animations**: Smooth scroll-triggered reveal animations
+- **Video Project Showcases**: Embedded project demos with Loom and YouTube integration
+- **Contact Form**: Functional contact form with professional styling
+- **Session-Based Loading**: Smart loading animation that appears only on first visit
+- **Mobile-Friendly Navigation**: Touch-optimized hamburger menu
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** - Modern React with hooks and functional components
+- **Vite** - Lightning-fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for rapid styling
+- **React Icons** - Comprehensive icon library
+- **Intersection Observer API** - For scroll-based animations
+- **FormSubmit** - Contact form backend service
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+View the live portfolio at: [Your Portfolio URL]
+
+## 📋 Sections
+
+### Home
+
+- Professional introduction with interactive profile picture
+- Dual functionality: navigate to contact section and download resume
+- Hero section with animated elements
+
+### About
+
+- Clean, professional overview of background and skills
+- Responsive layout with optimized typography
+
+### Projects
+
+- **What To Wear?** - Full-stack weather-based clothing recommendation app
+- **Spots** - Photo-sharing web application with real-time interactions
+- **Triple Peaks Coffee Shop** - Responsive coffee shop website
+- Interactive project cards with embedded video demos
+- Direct links to GitHub repositories
+
+### Contact
+
+- Professional contact form with glass morphism styling
+- Form validation and submission handling
+- Gradient submit button with glow effects
+
+### Footer
+
+- Clean circular social media icons (LinkedIn, GitHub)
+- Professional copyright notice
+
+## 🎨 Design Features
+
+- **Glass Morphism**: Consistent transparent elements throughout
+- **Responsive Grid Layouts**: Flexible layouts that adapt to any screen size
+- **Smooth Animations**: Scroll-triggered reveals and hover effects
+- **Professional Typography**: Clean, readable font hierarchy
+- **Color Scheme**: Modern gradient accents with teal, blue, and indigo
+
+## 🔧 Local Development
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Evan-Boodoosingh/portfolio.git
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser to `http://localhost:5173`
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `dist/` directory.
+
+## 📧 Contact
+
+Feel free to reach out for collaboration opportunities or just to connect!
+
+- **Email**: boodoosinghevan@gmail.com
+- **LinkedIn**: [linkedin.com/in/evan-boodoosingh](https://www.linkedin.com/in/evan-boodoosingh/)
+- **GitHub**: [github.com/Evan-Boodoosingh](https://github.com/Evan-Boodoosingh)
+
+---
+
+© 2025 Evan Boodoosingh. All rights reserved.
