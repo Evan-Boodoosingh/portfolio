@@ -49,7 +49,7 @@ function About() {
         </div>
         <div>
           <div className="rounded-xl p-6">
-            <h3 className="text-4xl text-center font-bold mb-8 flex items-baseline justify-center gap-2">
+            <h3 className="text-4xl text-center font-bold mb-8 flex items-baseline justify-center gap-3">
               <span className="font-emoji text-5xl leading-none">💼</span>
               <span className="mt-1 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent leading-none">
                 Skills
