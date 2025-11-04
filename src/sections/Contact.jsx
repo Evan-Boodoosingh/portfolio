@@ -8,11 +8,13 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="max-w-2xl mx-auto px-4 w-full">
-          <h2 className="w-full text-4xl md:text-5xl lg:text-5xl font-semibold mb-7 text-center leading-relaxed py-2 flex items-center justify-center gap-3">
-            <span className="bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">
+          <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 text-center leading-tight py-2 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+            <span className="bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent whitespace-nowrap">
               Get In Touch
             </span>
-            <span className="font-emoji text-6xl leading-none">✉️</span>
+            <span className="font-emoji text-6xl sm:text-7xl lg:text-8xl leading-none">
+              ✉️
+            </span>
           </h2>
           <form
             action="https://formsubmit.co/boodoosinghevan@gmail.com"
@@ -34,7 +36,7 @@ export const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Please enter your Email: example@email.com"
+                placeholder="Please enter your Email..."
                 required
                 className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-full px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16"
               />
