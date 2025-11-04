@@ -25,6 +25,10 @@ function Navbar({ isMenuOpen, setIsMenuOpen }) {
             <div className="hidden md:flex items-center">
               <a
                 href="#home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="text-gray-300 text-md font-medium hover:text-white hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300"
               >
                 Home

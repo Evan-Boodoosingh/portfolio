@@ -20,7 +20,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-9 lg:gap-15 relative"
+      className="h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-9 lg:gap-15 relative top-0"
     >
       <div className="text-center z-10 px-4">
         <img
