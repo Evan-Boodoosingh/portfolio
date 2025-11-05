@@ -75,7 +75,7 @@ function Projects() {
                 {/* Video/Image section */}
                 <div className="mt-auto w-full">
                   <div className="flex flex-col text-center my-2 py-4 justify-center gap-3 border-2 border-white/10 group-hover:border-blue-500/50 group-hover:shadow-[9_2px_8px_rgba(59,130,246,0.3)] rounded-xl transition-all">
-                    <p className="text-gray-300 transition-colors group-hover:text-blue-400">
+                    <p className="bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all">
                       View Project
                     </p>
                     <div className="flex justify-between items-center font-bold text-blue-400 transition-colors hover:text-white">
