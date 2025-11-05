@@ -17,7 +17,7 @@ function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
         <RxCross2 />
       </button>
       <a
-       onClick={() => setIsMenuOpen(false)}
+        onClick={() => setIsMenuOpen(false)}
         href="#home"
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
              ${

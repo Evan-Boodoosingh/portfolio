@@ -15,10 +15,7 @@ function About() {
     "RESTful APIs",
   ];
   return (
-    <section
-      id="about"
-      className="min-h-screen font-mono flex items-center justify-center py-10 pt-32"
-    >
+    <section id="about" className="py-10 pt-32 font-mono">
       <RevealOnScroll>
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="max-w-4xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-8 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-tight">

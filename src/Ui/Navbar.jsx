@@ -23,12 +23,12 @@ function Navbar({ isMenuOpen, setIsMenuOpen }) {
 
           <div className="flex md:flex items-center">
             <div className="hidden md:flex items-center">
-              <a
-                href="#home"
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="text-gray-300 text-md font-medium hover:text-white hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300"
               >
                 Home
-              </a>
+              </button>
               <a
                 href="#about"
                 className="text-gray-300 text-md font-medium hover:text-white hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300"

@@ -10,6 +10,12 @@ body {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 375px) {
+  .wave-container {
+    display: none;
+  }
+}
+
 @layer utilities {
   @keyframes loading {
     0% {

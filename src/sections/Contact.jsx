@@ -2,13 +2,10 @@ import RevealOnScroll from "../Ui/RevealOnScroll";
 
 export const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="min-h-screen font-mono flex items-center justify-center py-10 pt-32"
-    >
+    <section id="contact" className="py-10 pt-32 font-mono">
       <RevealOnScroll>
         <div className="max-w-2xl mx-auto px-4 w-full">
-          <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 text-center leading-tight py-2 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+          <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 text-center leading-tight py-2 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
             <span className="bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent whitespace-nowrap">
               Get In Touch
             </span>
@@ -48,7 +45,7 @@ export const Contact = () => {
                 rows={6}
                 placeholder="Please fill in your Message"
                 required
-                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-4xl px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16 resize-y placeholder:text-center"
+                className="w-full bg-white/5 backdrop-blur-lg border border-white/15 rounded-4xl px-6 py-4 text-white text-lg font-mono placeholder-gray-400 shadow-2xl transition-all duration-300 focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_8px_rgba(59,130,246,0.2)] h-16 min-h-16 resize-y max-h-48 placeholder:text-center"
               />
             </div>
             <div>
