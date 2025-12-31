@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState,} from "react";
 import MobileMenu from "./Ui/MobileMenu";
 import Navbar from "./Ui/NavBar";
 import LoadingScreenAnimation from "./Ui/LoadingScreenAnimation";
