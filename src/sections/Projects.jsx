@@ -35,7 +35,7 @@ function Projects() {
       id: 4,
       title: "Beacon Hill Property Management",
       description:
-        "A modern, responsive property management web application showcasing residential, commercial, and construction services with smooth scroll animations, custom Intersection Observer implementations, and an integrated contact system, built with React 18, TypeScript, Vite, and Tailwind CSS v4.",
+        "A modern, responsive property management web application showcasing residential, commercial, and construction services with smooth scroll animations, custom Intersection Observer implementations, and an integrated contact system, built with React 18, TypeScript, Vite, and Tailwind CSS.",
       video: "https://www.loom.com/embed/e7f2db20a099483da4792bf94739472f",
       technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS v4"],
       link: "https://github.com/Evan-Boodoosingh/bhpm",
