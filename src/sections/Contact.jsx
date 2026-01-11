@@ -18,6 +18,11 @@ export const Contact = () => {
             method="POST"
             className="space-y-6"
           >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://evan-boodoosingh.github.io/portfolio"
+            />
             <div className="relative">
               <input
                 type="text"
