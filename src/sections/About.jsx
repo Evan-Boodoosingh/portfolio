@@ -67,6 +67,7 @@ function About() {
             </div>
           </div>
         </div>
+        </div>
       </RevealOnScroll>
     </section>
   );
