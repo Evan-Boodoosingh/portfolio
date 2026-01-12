@@ -1,6 +1,5 @@
 import { useState } from "react";
 import coffee from "../assets/triplepeaks.png";
-import RevealOnScroll from "../Ui/RevealOnScroll";
 
 function Projects() {
   const [projects] = useState([
@@ -39,79 +38,88 @@ function Projects() {
       video: "https://www.loom.com/embed/e7f2db20a099483da4792bf94739472f",
       technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS v4"],
       link: "https://github.com/Evan-Boodoosingh/bhpm",
+      deployedUrl: "https://evan-boodoosingh.github.io/bhpm/",
+    },
+    {
+      id: 5,
+      title: "Lost Pets - Korra & GRiZ",
+      description:
+        "A vibrant, animated lost pet website featuring dynamic dog profiles with smooth Framer Motion transitions, responsive image positioning, and an integrated contact form system, built with React 18, TypeScript, Vite, Tailwind CSS, and deployed via GitHub Pages with custom gradient animations and mobile-optimized navigation.",
+      video: "https://www.loom.com/embed/2089399a18e440c88aa3bb6dffd7c53f",
+      technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS v4"],
+      link: "https://github.com/Evan-Boodoosingh/lost-dog",
+      deployedUrl: "https://evan-boodoosingh.github.io/lost-dog/",
     },
   ]);
   return (
     <section id="projects" className="py-10 pt-32 font-mono">
-      <RevealOnScroll>
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-tight py-2">
-            Featured Projects
-          </h2>
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-tight py-2">
+          Featured Projects
+        </h2>
 
-          <div className="flex flex-wrap gap-6 justify-center">
-            {projects.map((project, index) => (
-              <a
-                key={index}
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex-1 min-w-80 max-w-96 px-6 pt-6 pb-0 rounded-xl flex flex-col border-2 border-white/10 hover:border-blue-500/50 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-all hover:bg-cyan-900 cursor-pointer text-inherit no-underline"
-              >
-                <h3 className="bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent group-hover:text-white group-hover:bg-none text-center leading-relaxed text-xl font-semibold mb-4 transition-all">
-                  {project.title}
-                </h3>
+        <div className="flex flex-wrap gap-6 justify-center">
+          {projects.map((project, index) => (
+            <a
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group w-full sm:flex-1 sm:min-w-80 max-w-96 px-6 pt-6 pb-0 rounded-xl flex flex-col border-2 border-white/10 hover:border-blue-500/50 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-all hover:bg-cyan-900 cursor-pointer text-inherit no-underline"
+            >
+              <h3 className="bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent group-hover:text-white group-hover:bg-none text-center leading-relaxed text-xl font-semibold mb-4 transition-all">
+                {project.title}
+              </h3>
 
-                {/* Description section - takes natural space */}
-                <div className="grow mb-6">
-                  <p className="text-gray-300 group-hover:bg-linear-to-r group-hover:from-teal-400 group-hover:to-blue-500 group-hover:bg-clip-text group-hover:text-transparent indent-8 transition-all leading-relaxed">
-                    {project.description}
+              {/* Description section - takes natural space */}
+              <div className="grow mb-6">
+                <p className="text-gray-300 group-hover:bg-linear-to-r group-hover:from-teal-400 group-hover:to-blue-500 group-hover:bg-clip-text group-hover:text-transparent indent-8 transition-all leading-relaxed">
+                  {project.description}
+                </p>
+              </div>
+
+              {/* Fixed position for badges - always in same spot */}
+              <div className="flex flex-wrap justify-center gap-2 mb-2 min-h-12 items-start">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-500/10 text-gray-300 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Video/Image section */}
+              <div className="mt-auto w-full">
+                <div className="flex flex-col text-center my-2 py-4 justify-center gap-3 border-2 border-white/10 group-hover:border-blue-500/50 group-hover:shadow-[9_2px_8px_rgba(59,130,246,0.3)] rounded-xl transition-all">
+                  <p className="bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all">
+                    View Project
                   </p>
-                </div>
-
-                {/* Fixed position for badges - always in same spot */}
-                <div className="flex flex-wrap justify-center gap-2 mb-2 min-h-12 items-start">
-                  {project.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="bg-blue-500/10 text-gray-300 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)]"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Video/Image section */}
-                <div className="mt-auto w-full">
-                  <div className="flex flex-col text-center my-2 py-4 justify-center gap-3 border-2 border-white/10 group-hover:border-blue-500/50 group-hover:shadow-[9_2px_8px_rgba(59,130,246,0.3)] rounded-xl transition-all">
-                    <p className="bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all">
-                      View Project
-                    </p>
-                    <div className="flex justify-between items-center font-bold text-blue-400 transition-colors hover:text-white">
-                      {project.video ? (
-                        <div className="w-full h-46 rounded-xl overflow-hidden relative">
-                          <iframe
-                            src={project.video}
-                            className="w-full h-full border-0 absolute inset-0"
-                            allowFullScreen
-                            title={`${project.title} Demo`}
-                          />
-                        </div>
-                      ) : (
-                        <img
-                          src={project.image}
-                          alt={`${project.title} Image`}
-                          className="w-full h-46 object-cover rounded-xl"
+                  <div className="flex justify-between items-center font-bold text-blue-400 transition-colors hover:text-white">
+                    {project.video ? (
+                      <div className="w-full h-46 rounded-xl overflow-hidden relative">
+                        <iframe
+                          src={project.video}
+                          className="w-full h-full border-0 absolute inset-0"
+                          allowFullScreen
+                          title={`${project.title} Demo`}
                         />
-                      )}
-                    </div>
+                      </div>
+                    ) : (
+                      <img
+                        src={project.image}
+                        alt={`${project.title} Image`}
+                        className="w-full h-46 object-cover rounded-xl"
+                      />
+                    )}
                   </div>
                 </div>
-              </a>
-            ))}
-          </div>
+              </div>
+            </a>
+          ))}
         </div>
-      </RevealOnScroll>
+      </div>
     </section>
   );
 }
