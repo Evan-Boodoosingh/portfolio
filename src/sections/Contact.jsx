@@ -2,10 +2,10 @@ import RevealOnScroll from "../Ui/RevealOnScroll";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-10 pt-32 font-mono">
+    <section id="contact" className="py-20 pt-40 font-mono">
       <RevealOnScroll>
-        <div className="max-w-2xl mx-auto px-4 w-full">
-          <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 text-center leading-tight py-2 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <div className="max-w-2xl mx-auto px-6 w-full">
+          <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-12 text-center leading-tight py-2 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
             <span className="bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent whitespace-nowrap">
               Get In Touch
             </span>
@@ -16,7 +16,7 @@ export const Contact = () => {
           <form
             action="https://formsubmit.co/boodoosinghevan@gmail.com"
             method="POST"
-            className="space-y-6"
+            className="space-y-8"
           >
             <input
               type="hidden"

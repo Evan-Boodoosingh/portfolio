@@ -34,7 +34,7 @@ function Projects() {
       id: 4,
       title: "Beacon Hill Property Management",
       description:
-        "A modern, responsive property management web application showcasing residential, commercial, and construction services with smooth scroll animations, custom Intersection Observer implementations, and an integrated contact system, built with React 18, TypeScript, Vite, and Tailwind CSS.",
+        "A modern, responsive property management web application showcasing residential, commercial, and construction services with smooth scroll animations, custom Intersection Observer implementations, and an integrated contact system.",
       video: "https://www.loom.com/embed/e7f2db20a099483da4792bf94739472f",
       technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS v4"],
       link: "https://github.com/Evan-Boodoosingh/bhpm",
@@ -44,28 +44,36 @@ function Projects() {
       id: 5,
       title: "Lost Pets - Korra & GRiZ",
       description:
-        "A vibrant, animated lost pet website featuring dynamic dog profiles with smooth Framer Motion transitions, responsive image positioning, and an integrated contact form system, built with React 18, TypeScript, Vite, Tailwind CSS, and deployed via GitHub Pages with custom gradient animations and mobile-optimized navigation.",
+        "A vibrant, animated lost pet website featuring dynamic dog profiles with smooth Framer Motion transitions, responsive image positioning, and an integrated contact form system",
       video: "https://www.loom.com/embed/2089399a18e440c88aa3bb6dffd7c53f",
       technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS v4"],
       link: "https://github.com/Evan-Boodoosingh/lost-dog",
       deployedUrl: "https://evan-boodoosingh.github.io/lost-dog/",
     },
+    {
+      id: 6,
+      title: "Herik's 40th Birthday - One Piece Tribute",
+      description:
+        "A custom birthday celebration website honoring a friend's 40th birthday with an immersive One Piece pirate theme, featuring an interactive wanted poster hero section, animated photo timeline showcasing 25+ memories across a decade, heartfelt friend testimonials, and a treasure chest gift reveal with pirate-themed animations and easter eggs throughout, built with React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, and deployed via GitHub Pages.",
+      video: "https://www.loom.com/embed/ee9bb11e2d3b45dd84eec3d18a82bd6a",
+      technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS v4", "Framer Motion"],
+      link: "https://github.com/Evan-Boodoosingh/herik-birthday",
+      deployedUrl: "https://evan-boodoosingh.github.io/herik-birthday/",
+    },
   ]);
+
   return (
     <section id="projects" className="py-10 pt-32 font-mono">
-      <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
         <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-tight py-2">
           Featured Projects
         </h2>
 
         <div className="flex flex-wrap gap-6 justify-center">
           {projects.map((project, index) => (
-            <a
+            <div
               key={index}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group w-full sm:flex-1 sm:min-w-80 max-w-96 px-6 pt-6 pb-0 rounded-xl flex flex-col border-2 border-white/10 hover:border-blue-500/50 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-all hover:bg-cyan-900 cursor-pointer text-inherit no-underline"
+              className="group w-full sm:flex-1 sm:min-w-80 max-w-96 px-6 pt-6 pb-6 rounded-xl flex flex-col border-2 border-white/10 hover:border-blue-500/50 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-all hover:bg-cyan-900"
             >
               <h3 className="bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent group-hover:text-white group-hover:bg-none text-center leading-relaxed text-xl font-semibold mb-4 transition-all">
                 {project.title}
@@ -93,9 +101,6 @@ function Projects() {
               {/* Video/Image section */}
               <div className="mt-auto w-full">
                 <div className="flex flex-col text-center my-2 py-4 justify-center gap-3 border-2 border-white/10 group-hover:border-blue-500/50 group-hover:shadow-[9_2px_8px_rgba(59,130,246,0.3)] rounded-xl transition-all">
-                  <p className="bg-linear-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all">
-                    View Project
-                  </p>
                   <div className="flex justify-between items-center font-bold text-blue-400 transition-colors hover:text-white">
                     {project.video ? (
                       <div className="w-full h-46 rounded-xl overflow-hidden relative">
@@ -115,8 +120,18 @@ function Projects() {
                     )}
                   </div>
                 </div>
+                <div className="flex gap-3 mt-4">
+                  {project.deployedUrl && (
+                    <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-white/20 text-gray-300 py-2 px-2 rounded-full hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition text-xs sm:text-sm hover:text-white flex items-center justify-center h-10">
+                      Live Site
+                    </a>
+                  )}
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-white/20 text-gray-300 py-2 px-2 rounded-full hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition text-xs sm:text-sm hover:text-white flex items-center justify-center h-10">
+                    View Code
+                  </a>
+                </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

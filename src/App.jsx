@@ -6,6 +6,7 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import { Contact } from "./sections/Contact";
+import RevealOnScroll from "./Ui/RevealOnScroll";
 import Footer from "./sections/Footer";
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
       )}
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <Home />
+      <RevealOnScroll>
+        <Home />
+      </RevealOnScroll>
       <About />
       <Projects />
       <Contact />
