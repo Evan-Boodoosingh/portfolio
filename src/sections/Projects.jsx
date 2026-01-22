@@ -56,7 +56,13 @@ function Projects() {
       description:
         "A custom birthday celebration website honoring a friend's 40th birthday with an immersive One Piece pirate theme, featuring an interactive wanted poster hero section, animated photo timeline showcasing 25+ memories across a decade, heartfelt friend testimonials, and a treasure chest gift reveal with pirate-themed animations and easter eggs throughout, built with React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, and deployed via GitHub Pages.",
       video: "https://www.loom.com/embed/ee9bb11e2d3b45dd84eec3d18a82bd6a",
-      technologies: ["React 18", "TypeScript", "Vite", "Tailwind CSS v4", "Framer Motion"],
+      technologies: [
+        "React 18",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS v4",
+        "Framer Motion",
+      ],
       link: "https://github.com/Evan-Boodoosingh/herik-birthday",
       deployedUrl: "https://evan-boodoosingh.github.io/herik-birthday/",
     },
@@ -64,7 +70,7 @@ function Projects() {
 
   return (
     <section id="projects" className="py-10 pt-32 font-mono">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-7 bg-linear-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-center leading-tight py-2">
           Featured Projects
         </h2>
@@ -122,11 +128,21 @@ function Projects() {
                 </div>
                 <div className="flex gap-3 mt-4">
                   {project.deployedUrl && (
-                    <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-white/20 text-gray-300 py-2 px-2 rounded-full hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition text-xs sm:text-sm hover:text-white flex items-center justify-center h-10">
+                    <a
+                      href={project.deployedUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 border-2 border-white/20 text-gray-300 py-2 px-2 rounded-full hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition text-xs sm:text-sm hover:text-white flex items-center justify-center h-10"
+                    >
                       Live Site
                     </a>
                   )}
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-white/20 text-gray-300 py-2 px-2 rounded-full hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition text-xs sm:text-sm hover:text-white flex items-center justify-center h-10">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 border-2 border-white/20 text-gray-300 py-2 px-2 rounded-full hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition text-xs sm:text-sm hover:text-white flex items-center justify-center h-10"
+                  >
                     View Code
                   </a>
                 </div>
