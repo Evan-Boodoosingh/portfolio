@@ -54,7 +54,7 @@ function Projects() {
       id: 6,
       title: "Herik's 40th Birthday - One Piece Tribute",
       description:
-        "A custom birthday celebration website honoring a friend's 40th birthday with an immersive One Piece pirate theme, featuring an interactive wanted poster hero section, animated photo timeline showcasing 25+ memories across a decade, heartfelt friend testimonials, and a treasure chest gift reveal with pirate-themed animations and easter eggs throughout, built with React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, and deployed via GitHub Pages.",
+        "A custom birthday celebration website honoring a friend's 40th birthday with an immersive One Piece pirate theme, featuring an interactive wanted poster hero section, animated photo timeline showcasing 25+ memories across a decade, heartfelt friend testimonials, and a treasure chest gift reveal with pirate-themed animations and easter eggs throughout.",
       video: "https://www.loom.com/embed/ee9bb11e2d3b45dd84eec3d18a82bd6a",
       technologies: [
         "React 18",
@@ -65,6 +65,16 @@ function Projects() {
       ],
       link: "https://github.com/Evan-Boodoosingh/herik-birthday",
       deployedUrl: "https://evan-boodoosingh.github.io/herik-birthday/",
+    },
+    {
+      id: 7,
+      title: "Queued",
+      description:
+        "A full-stack social anime tracking platform that allows users to track shows, follow friends, discuss episodes, and discover what others are watching. Built with React, Node.js, Express, and MongoDB.",
+      video: "https://www.loom.com/embed/1623021f60f04d9a8c6852cbaadd6744",
+      technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
+      link: "https://github.com/Evan-Boodoosingh/qd",
+      deployedUrl: "https://qd-two.vercel.app",
     },
   ]);
 
@@ -107,24 +117,22 @@ function Projects() {
               {/* Video/Image section */}
               <div className="mt-auto w-full">
                 <div className="flex flex-col text-center my-2 py-4 justify-center gap-3 border-2 border-white/10 group-hover:border-blue-500/50 group-hover:shadow-[9_2px_8px_rgba(59,130,246,0.3)] rounded-xl transition-all">
-                  <div className="flex justify-between items-center font-bold text-blue-400 transition-colors hover:text-white">
-                    {project.video ? (
-                      <div className="w-full h-46 rounded-xl overflow-hidden relative">
-                        <iframe
-                          src={project.video}
-                          className="w-full h-full border-0 absolute inset-0"
-                          allowFullScreen
-                          title={`${project.title} Demo`}
-                        />
-                      </div>
-                    ) : (
-                      <img
-                        src={project.image}
-                        alt={`${project.title} Image`}
-                        className="w-full h-46 object-cover rounded-xl"
+                  {project.video ? (
+                    <div className="relative w-full aspect-video rounded-xl overflow-hidden">
+                      <iframe
+                        src={project.video}
+                        className="absolute inset-0 w-full h-full border-0"
+                        allowFullScreen
+                        title={`${project.title} Demo`}
                       />
-                    )}
-                  </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={project.image}
+                      alt={`${project.title} Image`}
+                      className="w-full aspect-video object-cover rounded-xl"
+                    />
+                  )}
                 </div>
                 <div className="flex gap-3 mt-4">
                   {project.deployedUrl && (
